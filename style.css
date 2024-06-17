@@ -131,6 +131,7 @@ div > article {
     width: 75%;
     float: right;
     margin-top: 0%;
+    hyphens: auto;
 }
 
 .bi-main-page {
@@ -159,6 +160,48 @@ div > article {
     width: 45% !important;
 }
 
+/*transitions*/
+.card-img-top {
+    transition: transform .2s; 
+  }
+  
+  .card-img-top:hover {
+    transform: scale(0.95);
+  }
+
+  .fade-in-text {
+    animation: fadeIn 0.75s;
+    -webkit-animation: fadeIn 0.75s;
+    -moz-animation: fadeIn 0.75s;
+    -o-animation: fadeIn 0.75s;
+    -ms-animation: fadeIn 0.75s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 /* text decorations */
 h2#sidebar-header {
     text-align: center;
@@ -178,10 +221,6 @@ h2#sidebar-header {
 a {
     color: #FFF;
     text-decoration: none;
-}
-
-a:active {
-    color: #d4b15c !important;
 }
 
 a#email {
@@ -236,11 +275,11 @@ hr {
     border: none;
 }
 
-.resume-locations {
+.grey-text {
     color: #D3DEE8CC;
 }
 
-.resume-dates {
+.yellow-text {
     color: #d4b15c;
 }
 
@@ -294,4 +333,19 @@ div.resume-text > p:first-child {
 @-ms-keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+/* turn off animations/transitions for accessiblitly*/
+@media (prefers-reduced-motion: reduce) { 
+    .fade-in-text { 
+        animation: none; 
+    }
+
+    .card-img-top {
+        transition: none; 
+    }
+
+    .card-img-top:hover {
+        transform: none;
+    }
 }
