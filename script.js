@@ -78,7 +78,7 @@ function clickProjects(event) {
     event.preventDefault();
 }
 
-function clickSkills(){
+function clickSkills(event){
     //display the skills section only  
     skills.style.display = "block";
     skills.classList.add("fade-in-text");
