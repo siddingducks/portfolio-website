@@ -1,4 +1,4 @@
-/* general page compnents */
+/* general page components */
 html {
     background-size: cover;
     min-height: 100vh;
@@ -315,7 +315,6 @@ div.resume-text > p:first-child {
     }
 }
 
-
 /* make webpage mobile-friendly for phones and tablets */
 @media only screen and (max-device-width: 1024px) {
     .page-content {
@@ -488,5 +487,4 @@ div.resume-text > p:first-child {
     .skills-text li {
         text-align: left;
     }
-
 }
