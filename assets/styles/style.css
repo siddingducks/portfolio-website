@@ -130,7 +130,7 @@ div > article {
 .article-text {
     width: 75%;
     float: right;
-    margin-top: 0%;
+    margin-top: 0;
     hyphens: auto;
 }
 
@@ -160,48 +160,6 @@ div > article {
     width: 45% !important;
 }
 
-/*transitions*/
-.card-img-top {
-    transition: transform .2s; 
-  }
-  
-  .card-img-top:hover {
-    transform: scale(0.95);
-  }
-
-  .fade-in-text {
-    animation: fadeIn 0.75s;
-    -webkit-animation: fadeIn 0.75s;
-    -moz-animation: fadeIn 0.75s;
-    -o-animation: fadeIn 0.75s;
-    -ms-animation: fadeIn 0.75s;
-  }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-moz-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-webkit-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-o-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  
-  @-ms-keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 /* text decorations */
 h2#sidebar-header {
     text-align: center;
@@ -215,7 +173,7 @@ h2#sidebar-header {
     background-color: #324455CC;
     border-radius: 10px;
     padding: 2.5%;
-    margin: 0%;
+    margin: 0;
 }
 
 a {
@@ -227,9 +185,8 @@ a#email {
     font-size: 0.82em;
 }
 
-
 hr {
-    margin: 2.5% 0% 2.5% 0%;
+    margin: 2.5% 0 2.5% 0;
     border: 2.75px solid #d4b15c;
     width: 5%;
     border-radius: 25%;
@@ -271,7 +228,7 @@ hr {
     padding-left: 2.5%;
 }
 
-.education {
+.resume-last-child {
     border: none;
 }
 
@@ -284,7 +241,7 @@ hr {
 }
 
 div.resume-text > p:first-child {
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .resume-content p {
@@ -301,13 +258,21 @@ div.resume-text > p:first-child {
     padding-left: 2.5%;
 }
 
-/* animations */
-.fade-in {
-    animation: fadeIn 5s;
-    -webkit-animation: fadeIn 5s;
-    -moz-animation: fadeIn 5s;
-    -o-animation: fadeIn 5s;
-    -ms-animation: fadeIn 5s;
+/* transitions and animations */
+.card-img-top {
+    transition: transform .2s; 
+}
+  
+.card-img-top:hover {
+    transform: scale(0.95);
+}
+
+.fade-in-text {
+    animation: fadeIn 0.75s;
+    -webkit-animation: fadeIn 0.75s;
+    -moz-animation: fadeIn 0.75s;
+    -o-animation: fadeIn 0.75s;
+    -ms-animation: fadeIn 0.75s;
 }
 
 @keyframes fadeIn {
@@ -335,7 +300,7 @@ div.resume-text > p:first-child {
     100% { opacity: 1; }
 }
 
-/* turn off animations/transitions for accessiblitly*/
+/* turn off transitions and animations for accessiblitly*/
 @media (prefers-reduced-motion: reduce) { 
     .fade-in-text { 
         animation: none; 
@@ -348,4 +313,180 @@ div.resume-text > p:first-child {
     .card-img-top:hover {
         transform: none;
     }
+}
+
+
+/* make webpage mobile-friendly for phones and tablets */
+@media only screen and (max-device-width: 1024px) {
+    .page-content {
+        width: 90%;
+        float: none;
+        margin: auto;
+        position: static;
+    }
+
+    /* sidebar */
+    .sidebar {
+        height: 400px;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+
+    .mobile-float-container {
+        width: 90%;
+    }
+
+    .mobile-float {
+        width: 55%;
+        height: 30%;
+        float: left;
+    }
+
+    #avatar {
+        width: 30%;
+        margin: 0 2.5%;
+        padding: 4% 2% 0 2%;
+        float: left;
+    }
+
+    h2#sidebar-header {
+        font-size: 3em;
+        margin: 0.5em auto;
+        text-align: left;
+    }
+
+    .headlines {
+        margin-top: 0;
+        display: inline-block;
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .bi-sidebar {
+        transform: scale(2.5, 2.5);
+        padding: 12%;
+        margin-top: 1.5em;
+    }
+
+    .contact-card {
+        padding: 1%;
+        text-align: center;
+        width: 10%;
+        margin: 1em 3em;
+        float: right;
+    }
+
+    .contact-header, .contact-text {
+        display: none;
+    }
+
+    .contact-card + .contact-card {
+        float: right;
+    }
+
+    /* main page*/
+    .main-page {
+        margin-bottom: 8vh;
+    }
+
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    section#about > h2 {
+        font-size: 3em;
+    }
+
+    hr {
+        margin: 1.5em 0em;
+        width: 7%;
+    }
+
+    .hr-float {
+        float: none;
+        margin-bottom: 1.5em
+    }
+
+    .nav {
+        /* positioning */
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 10vh;
+        float: none;
+        /* aesthetic */
+        border-radius: 25px;
+        background-color: #324455;
+        z-index: 999;
+    }
+
+    .nav-item {
+        font-size: 2em;
+        margin: auto;
+    }
+
+    article {
+        width: 90%;
+        float: none;
+        font-size: 1em;
+        margin-bottom: 2%;
+        padding: 1% 5%;
+        font-size: larger;
+    }
+
+    .bi-article {
+        width: 100%;
+        transform: scale(2, 2);
+        padding: 2%;
+        float: none;
+        margin: 5% auto;
+    }
+
+    .article-text {
+        width: 100%;
+        float: none;
+        text-align: center; 
+    }
+
+    .bi-main-page {
+        transform: scale(2.5, 2.5);
+        padding: 0.25em;
+        margin: 1.5em 3em 1em 1em;
+    }
+
+    /* education */
+    .resume-text, .resume-spacer {
+        padding-left: 4%;
+    }
+
+    .resume li {
+        padding-left: 4%;
+    }
+
+    /* projects */
+    .card-containter {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 100% !important;
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    /* skills */
+    .article-header {
+        font-size: 1em;
+    }
+
+    .skills-text {
+        font-size: 1em;
+    }
+
+    .skills-text li {
+        text-align: left;
+    }
+
 }
