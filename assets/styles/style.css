@@ -429,10 +429,9 @@ div.resume-text > p:first-child {
     article {
         width: 90%;
         float: none;
-        font-size: 1em;
+        font-size: 2em;
         margin-bottom: 2%;
         padding: 1% 5%;
-        font-size: larger;
     }
 
     .bi-article {
@@ -457,7 +456,7 @@ div.resume-text > p:first-child {
 
     /* education */
     .resume-text, .resume-spacer {
-        padding-left: 4%;
+        padding-left: 2%;
     }
 
     .resume li {
@@ -471,17 +470,17 @@ div.resume-text > p:first-child {
     
     .card {
         width: 100% !important;
-        font-size: 1.5em;
+        font-size: 2em;
         margin-bottom: 1em;
     }
 
     /* skills */
     .article-header {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .skills-text {
-        font-size: 1em;
+        font-size: 2em;
     }
 
     .skills-text li {
