@@ -389,16 +389,11 @@ div.resume-text > p:first-child {
     }
 
     h1 {
-        font-size: 4em;
         margin-bottom: 0;
     }
 
     section {
         font-size: 3em;
-    }
-
-    section#about > h2 {
-        font-size: 4em !important;
     }
 
     hr {
@@ -433,7 +428,6 @@ div.resume-text > p:first-child {
     article {
         width: 90%;
         float: none;
-        font-size: 3em;
         margin-bottom: 2%;
         padding: 1% 5%;
     }
@@ -474,15 +468,10 @@ div.resume-text > p:first-child {
     
     .card {
         width: 100% !important;
-        font-size: 1.75em !important;
         margin-bottom: 1em;
     }
 
     /* skills */
-    .article-header {
-        font-size: 1.5em !important;
-    }
-
     .skills-text li {
         text-align: left;
     }
