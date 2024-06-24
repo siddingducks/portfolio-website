@@ -453,12 +453,15 @@ div.resume-text > p:first-child {
     }
 
     /* education */
+    .resume-header {
+        font-size: 2em;
+    }
     .resume-text, .resume-spacer {
         padding-left: 2%;
     }
 
     .resume li {
-        padding-left: 4%;
+        padding-left: 2%;
     }:
 
     /* projects */
