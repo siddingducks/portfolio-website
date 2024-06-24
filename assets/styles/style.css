@@ -389,12 +389,12 @@ div.resume-text > p:first-child {
     }
 
     h1 {
-        font-size: 3em;
+        font-size: 4em;
         margin-bottom: 0;
     }
 
     section#about > h2 {
-        font-size: 3em !important;
+        font-size: 4em !important;
     }
 
     hr {
@@ -429,7 +429,7 @@ div.resume-text > p:first-child {
     article {
         width: 90%;
         float: none;
-        font-size: 2em;
+        font-size: 3em;
         margin-bottom: 2%;
         padding: 1% 5%;
     }
@@ -470,7 +470,7 @@ div.resume-text > p:first-child {
     
     .card {
         width: 100% !important;
-        font-size: 2em !important;
+        font-size: 1.75em !important;
         margin-bottom: 1em;
     }
 
