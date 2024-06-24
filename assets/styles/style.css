@@ -429,7 +429,7 @@ div.resume-text > p:first-child {
     article {
         width: 90%;
         float: none;
-        font-size: 3em;
+        font-size: 5em;
         margin-bottom: 2%;
         padding: 1% 5%;
     }
@@ -476,11 +476,11 @@ div.resume-text > p:first-child {
 
     /* skills */
     .article-header {
-        font-size: 2em !important;
+        font-size: 1.5em !important;
     }
 
     .skills-text {
-        font-size: 1.5em !important;
+        font-size: 1.25em !important;
     }
 
     .skills-text li {
