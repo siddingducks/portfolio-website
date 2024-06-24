@@ -394,7 +394,7 @@ div.resume-text > p:first-child {
     }
 
     section#about > h2 {
-        font-size: 3em;
+        font-size: 3em !important;
     }
 
     hr {
@@ -448,7 +448,7 @@ div.resume-text > p:first-child {
         text-align: center; 
     }
 
-    .bi-main-page {
+    .bi-main-page { 
         transform: scale(2.5, 2.5);
         padding: 0.25em;
         margin: 1.5em 3em 1em 1em;
@@ -461,7 +461,7 @@ div.resume-text > p:first-child {
 
     .resume li {
         padding-left: 4%;
-    }
+    }:
 
     /* projects */
     .card-containter {
@@ -470,17 +470,17 @@ div.resume-text > p:first-child {
     
     .card {
         width: 100% !important;
-        font-size: 2em;
+        font-size: 2em !important;
         margin-bottom: 1em;
     }
 
     /* skills */
     .article-header {
-        font-size: 2em;
+        font-size: 2em !important;
     }
 
     .skills-text {
-        font-size: 2em;
+        font-size: 1.5em !important;
     }
 
     .skills-text li {
