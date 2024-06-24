@@ -397,7 +397,7 @@ div.resume-text > p:first-child {
     }
 
     hr {
-        margin: 1.5em 0em;
+        margin: 24px 0;
         width: 7%;
     }
 
@@ -454,8 +454,9 @@ div.resume-text > p:first-child {
 
     /* education */
     .resume-header {
-        font-size: 2em;
+        font-size: smaller;
     }
+    
     .resume-text, .resume-spacer {
         padding-left: 2%;
     }
