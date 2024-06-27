@@ -449,7 +449,7 @@ div.resume-text > p:first-child {
     .bi-main-page { 
         transform: scale(2.5, 2.5);
         padding: 0.25em;
-        margin: 1em 1em 0.2em 1em;
+        margin: 1em 1em 0 1em;
     }
 
     /* education */
