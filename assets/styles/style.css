@@ -455,7 +455,7 @@ div.resume-text > p:first-child {
     /* education */
     .resume-header {
         font-size: smaller;
-        padding-bottom: 4px;
+        padding-bottom: 0;
     }
     
     .resume-text, .resume-spacer {
@@ -463,7 +463,7 @@ div.resume-text > p:first-child {
     }
 
     .resume li {
-        padding-left: 4px;
+        padding-left: 0;
     }:
 
     /* projects */
