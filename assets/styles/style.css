@@ -449,12 +449,16 @@ div.resume-text > p:first-child {
     .bi-main-page { 
         transform: scale(2.5, 2.5);
         padding: 0.25em;
-        margin: 1em 0.5em 0em 1em;
+        margin: 0.5em 1em 0em 1em;
     }
 
     /* education */
+    .header-bi-adjacent {
+        font-size: 1.25em;
+    }
+    
     .resume-header {
-        font-size: smaller;
+        font-size: 1em;
         padding-bottom: 0;
     }
     
